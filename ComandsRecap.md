@@ -228,3 +228,23 @@ Different text here.
 * Just like with `git revert` you can use the commit ID, or you can use the syntax `HEAD~<number>`. The number you put will be the number of commits backwards from the current `HEAD` that git will move the new HEAD to.
 * You can always use `git log` to see all your previous history to know where to reset to.
 
+### Discarding Changes in Modified Files: Recap
+
+* You can remove changes in the working directory using `git checkout`.
+ * This is destructive! You will throw away the changes and not be able to get them back.
+* `git checkout -- <filename>` is the syntax. The `--` lets Git know you're talking about a file. This will revert the file to the version found in the last commit.
+* This only works for files in the working directory. Files in the staging area or already commited won't be reverted.
+
+### Removing Tracked Files: Recap
+
+* Just as `git mv` exists to move or rename a file and instantly add the change to the staging area, `git rm` exists to remove a file.
+* `git rm <filename>` will remove the file and `add` the change to the staging area.
+
+## Creating Command Shortcuts: Recap
+
+* You can create aliases in git that let you call on the short alias instead of writing out a full long command.
+*  do this by setting a global alias using `git config`.
+* `git config --global alias.lol "log --oneline --graph --decorate --all"` would let you type `git lol` instead of the entire log command with all its options.
+* `git config --global alias.co "commit -m"` would let you write `git co "Commit Message"` to quickly commit with a message attached.
+
+
