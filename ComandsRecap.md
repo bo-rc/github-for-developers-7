@@ -209,6 +209,14 @@ Different text here.
 
 * The command `git commit --amend` will add whatever is in your staging area to your last commit, and allow you to edit that commit message.
 
+#### Changine commit msg farther back in history
+`git rebase -i HEAD~4`
+* change `pick` to `edit`
+
+`git commit --amend`
+`git rebase --continue`
+
+
 ### Unstaging Files: Recap
 
 * `git reset HEAD <filename>` will remove a file from the staging area, putting it back in your working directory.
