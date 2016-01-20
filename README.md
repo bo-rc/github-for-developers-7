@@ -255,4 +255,6 @@ Different text here.
 * `git config --global alias.lol "log --oneline --graph --decorate --all"` would let you type `git lol` instead of the entire log command with all its options.
 * `git config --global alias.co "commit -m"` would let you write `git co "Commit Message"` to quickly commit with a message attached.
 
+# [Emoji Cheet-Sheet](http://www.emoji-cheat-sheet.com/)
+:zero: :one: :two: :three:
 
