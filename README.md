@@ -105,6 +105,14 @@ git config --global push.default simple # only want to push the branch we are on
 * Do `git push`: assuming you set the default push behavior to simple, this will push your changes to the same branch on the remote system.
 * Back in GitHub, you can easily start a new pull request to merge the changes into `master` using the same process you learned earlier.
 
+## Push new local to remote
+```bash
+git init
+git commit -m "first commit"
+git remote add origin git@github.com:[username]/[repository].git
+git push -u origin master
+```
+
 ## Workflow
 ###Creating a Repository on GitHub: Recap
 * Use the green `New` button on the `Repositories` tab of your GitHub profile page.
